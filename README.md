@@ -46,6 +46,15 @@ These are candidate gap neighborhoods based on recent macro trends and typical s
 ## 2026 research-log
 - See `notes/research-log-2026.md` for the focused gap analysis, draft opportunity list, and manual research actions.
 
+## Automated research script
+- `scripts/gap_research.py`: runs YouTube Data API search, saves top video metadata + transcripts + comments to `data/`.
+- Usage:
+  - `pip install google-api-python-client youtube-transcript-api pandas tqdm`
+  - `export YOUTUBE_API_KEY="YOUR_API_KEY"`
+  - `python scripts/gap_research.py --query "ai prompt engineering" --max-videos 20 --comments 150`
+
+This script provides a concrete path to inspect real comments and transcript content for gap signals.
+
 ## Automation Aids
 - `scripts/extract_autocomplete.py` (scrapes YouTube suggestions for seeds)
 - `scripts/analyze_gap.py` (combines API data from Keywords Everywhere + YouTube Data API v3 for supply metrics)
