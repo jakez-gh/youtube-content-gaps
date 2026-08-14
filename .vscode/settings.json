@@ -2,7 +2,7 @@
   "workbench.colorCustomizations": {
     // Auto-generated distinctive project theme (minimal tier) — see
     // shared/docs/vscode-theming.md for the design rationale.
-    // hue=72.0 mode=light
+    // hue=72 mode=light
     // Diff add/remove colors are intentionally NOT set here — they stay on
     // VSCode's default semantic green/red so they read the same across
     // every themed project regardless of brand hue. Don't add
@@ -17,7 +17,7 @@
     "statusBar.foreground": "#f5f5f5",
     "statusBarItem.remoteBackground": "#bdfa2e",
     "statusBarItem.remoteForeground": "#f5f5f5",
-    "foreground": "#1a1a1a",
+    "foreground": "#7b7b7b",
     "editor.background": "#fcfdfa",
     "editor.foreground": "#1a1a1a",
     "descriptionForeground": "#1a1a1a",
