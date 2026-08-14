@@ -15,8 +15,10 @@
     "activityBar.activeBorder": "#bdfa2e",
     "statusBar.background": "#6a7e1b",
     "statusBar.foreground": "#f5f5f5",
+    "statusBar.border": "#bdfa2e",
     "statusBarItem.remoteBackground": "#bdfa2e",
     "statusBarItem.remoteForeground": "#f5f5f5",
+    "tab.activeBorderTop": "#bdfa2e",
     "foreground": "#7b7b7b",
     "editor.background": "#fcfdfa",
     "editor.foreground": "#1a1a1a",
@@ -30,5 +32,5 @@
     "terminal.background": "#ebeedd",
     "terminal.foreground": "#1a1a1a"
   },
-  "window.title": "🟢 life/money/youtube-content-gaps ${separator} ${activeEditorShort}"
+  "window.title": "🌊 life/money/youtube-content-gaps ${separator} ${activeEditorShort}"
 }
