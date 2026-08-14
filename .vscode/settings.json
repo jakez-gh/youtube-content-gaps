@@ -17,6 +17,7 @@
     "statusBar.foreground": "#f5f5f5",
     "statusBarItem.remoteBackground": "#bdfa2e",
     "statusBarItem.remoteForeground": "#f5f5f5",
+    "foreground": "#1a1a1a",
     "editor.background": "#fcfdfa",
     "editor.foreground": "#1a1a1a",
     "descriptionForeground": "#1a1a1a",
