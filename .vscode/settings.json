@@ -2,35 +2,53 @@
   "workbench.colorCustomizations": {
     // Auto-generated distinctive project theme (minimal tier) — see
     // shared/docs/vscode-theming.md for the design rationale.
-    // hue=72 mode=light
+    // hue=26 mode=dark
     // Diff add/remove colors are intentionally NOT set here — they stay on
     // VSCode's default semantic green/red so they read the same across
     // every themed project regardless of brand hue. Don't add
     // diffEditor.*Background overrides to this template.
-    "titleBar.activeBackground": "#6a7e1b",
+    "titleBar.activeBackground": "#7e461b",
     "titleBar.activeForeground": "#f5f5f5",
-    "titleBar.inactiveBackground": "#6a7e1b",
-    "activityBar.background": "#6a7e1b",
+    "titleBar.inactiveBackground": "#7e461b",
+    "activityBar.background": "#7e461b",
     "activityBar.foreground": "#f5f5f5",
-    "activityBar.activeBorder": "#bdfa2e",
-    "statusBar.background": "#6a7e1b",
+    "activityBar.activeBorder": "#fa9b2e",
+    "statusBar.background": "#7e461b",
     "statusBar.foreground": "#f5f5f5",
-    "statusBar.border": "#bdfa2e",
-    "statusBarItem.remoteBackground": "#bdfa2e",
+    "statusBar.border": "#fa9b2e",
+    "statusBarItem.remoteBackground": "#fa9b2e",
     "statusBarItem.remoteForeground": "#f5f5f5",
-    "tab.activeBorderTop": "#384f02",
-    "foreground": "#7b7b7b",
-    "editor.background": "#fcfdfa",
-    "editor.foreground": "#1a1a1a",
-    "descriptionForeground": "#1a1a1a",
-    "sideBar.background": "#f3f5ea",
-    "sideBar.foreground": "#1a1a1a",
-    "sideBarSectionHeader.background": "#e5e9d2",
-    "sideBarSectionHeader.foreground": "#0E0F11",
-    "sideBarTitle.foreground": "#0E0F11",
-    "panel.background": "#ebeedd",
-    "terminal.background": "#ebeedd",
-    "terminal.foreground": "#1a1a1a"
+    "tab.activeBorderTop": "#fa9b2e",
+    "foreground": "#f0f0f0",
+    // Fixed constants (not project-derived) for VSCode's NATIVE menu chrome
+    // (Electron context menus / dropdowns), which renders against
+    // menu.background -- always the built-in dark_modern #1F1F1F, since no
+    // workbench.colorTheme is set anywhere. NOTE: the Claude Code "/" command
+    // popup does NOT read these -- its CSS uses --app-primary-foreground /
+    // --app-secondary-foreground (-> foreground / descriptionForeground
+    // below), confirmed by reading the extension's own minified CSS
+    // (2026-08-14). Left in place for the native-menu case these DO cover.
+    "menu.foreground": "#e6e6e6",
+    "disabledForeground": "#b0b0b0",
+    "editor.background": "#0f0c0b",
+    "editor.foreground": "#f0f0f0",
+    // NOT #f0f0f0: descriptionForeground is ALSO read by the Claude Code
+    // popup's secondary/model-indicator text (--app-secondary-foreground),
+    // rendered against the fixed dark menu/bubble surfaces, not against
+    // editor.background. EDITOR_FG is near-black for light-mode projects --
+    // on the near-black menu bg that's ~1:1 contrast, i.e. invisible (2026-
+    // 08-14, GoogleDrive: user-reported unreadable model name in "/" menu,
+    // next to "Switch model..."). BASE_FG is already the cross-surface-safe
+    // maximin gray computed above -- reuse it here instead of re-deriving.
+    "descriptionForeground": "#f0f0f0",
+    "sideBar.background": "#1a1614",
+    "sideBar.foreground": "#f0f0f0",
+    "sideBarSectionHeader.background": "#201b18",
+    "sideBarSectionHeader.foreground": "#f5f5f5",
+    "sideBarTitle.foreground": "#f5f5f5",
+    "panel.background": "#15110f",
+    "terminal.background": "#15110f",
+    "terminal.foreground": "#f0f0f0"
   },
-  "window.title": "🌊 life/money/youtube-content-gaps ${separator} ${activeEditorShort}"
+  "window.title": "⚡ youtube-content-gaps ${separator} ${activeEditorShort}"
 }
